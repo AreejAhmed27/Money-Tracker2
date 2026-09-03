@@ -1,0 +1,6 @@
+{
+  "name": "Money Tracker",
+  "description": "Personal finance and expense manager with automated category tracking, real-time balance carry-overs, interactive calendar view, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

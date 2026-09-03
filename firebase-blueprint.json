@@ -1,0 +1,29 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "User profile records indexed by Firebase Auth UID",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "users/{userId}/financial_data": {
+      "title": "User Financial Documents",
+      "description": "User ledger data including expenses, assets, goals, debts, held items, payment methods, and preferences",
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "data": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["key", "data"]
+    }
+  }
+}

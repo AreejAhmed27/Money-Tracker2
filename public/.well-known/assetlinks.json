@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "studio.ai.money_tracker_5112.twa",
+    "sha256_cert_fingerprints": ["44:47:65:D7:B7:24:14:04:D8:4C:0C:9F:5C:C9:5A:D7:85:73:07:B9:B9:00:78:67:F4:D9:16:45:9D:B8:68:F2"]
+  }
+}]

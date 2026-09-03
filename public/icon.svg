@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Wallet Body Base with shadow -->
+  <g filter="url(#dropShadow)">
+    <rect x="96" y="140" width="320" height="232" rx="36" fill="#ffffff" />
+    <rect x="96" y="140" width="320" height="232" rx="36" fill="url(#cardGrad)" opacity="0.08" />
+  </g>
+
+  <!-- Wallet Top Arc/Card Peeking -->
+  <rect x="140" y="112" width="232" height="60" rx="16" fill="#34d399" />
+  <rect x="160" y="96" width="192" height="40" rx="12" fill="#6ee7b7" opacity="0.8" />
+
+  <!-- Main Wallet Border/Detail Line -->
+  <rect x="96" y="140" width="320" height="232" rx="36" fill="none" stroke="#059669" stroke-width="12" />
+
+  <!-- Wallet Flap/Pocket Clasp -->
+  <path d="M 280 206 L 396 206 C 418 206 418 306 396 306 L 280 306 C 260 306 244 290 244 270 L 244 242 C 244 222 260 206 280 206 Z" fill="#047857" filter="url(#dropShadow)" />
+  
+  <!-- Clasp Gold Coin / Token -->
+  <circle cx="316" cy="256" r="22" fill="#fbbf24" stroke="#d97706" stroke-width="4" />
+  
+  <!-- Dollar Symbol inside Clasp -->
+  <text x="316" y="264" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" fill="#78350f" text-anchor="middle">$</text>
+
+  <!-- Upward Trend Accent Icon on Wallet -->
+  <path d="M 148 290 L 196 242 L 232 278 L 290 220" fill="none" stroke="#059669" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 264 220 L 290 220 L 290 246" fill="none" stroke="#059669" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
